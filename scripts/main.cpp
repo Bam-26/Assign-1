@@ -12,5 +12,5 @@ using namespace std;
 
 int main()
 {
-    cout << namespace_exit::x + namespace_insert::x;
+    cout << "output = " << namespace_exit::x + namespace_insert::x;ss
 }
