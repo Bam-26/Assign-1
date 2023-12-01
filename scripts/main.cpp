@@ -25,7 +25,9 @@ public:
 
 
 int main()
-{ 
+{
+
+    //_______________________File Input_______________________
     Main tableData;
     ifstream inFile;
     inFile.open("table1.txt");
@@ -40,6 +42,8 @@ int main()
         tableData.upper95[i]
     )
     {i++;}
+    //________________________________________________________
+
 
     cout << "Table Row :\n\n";
     for (int j = 0; j < 10; j++)
