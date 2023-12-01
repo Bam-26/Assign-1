@@ -29,8 +29,8 @@ int main()
     Main tableData;
     ifstream inFile;
     inFile.open("table1.txt");
-
     int i = 0;
+    
     while 
     (
         inFile >> 
