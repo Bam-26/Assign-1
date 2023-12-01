@@ -11,24 +11,31 @@
 //_____________________
 using namespace std;
 
-fstream input;
-class main
+fstream inputFile;
+
+class Main
 {
 private:
-    
-public:
-   
+public: 
+    int combinations[216];
+    int indexMPN[216];
+    int lower95[216];
+    int upper95[216];
 };
 
+
 int main()
-{
-    input.open("table1.txt", ios::in);
-    while (!input.eof())
+{ 
+    //cout << namespace_exit::x + namespace_insert::x;
+    //cout << combi
+    inputFile.open("table1.txt", ios::in);
+    while (!inputFile.eof())
     {
-        char test[100];
-        input.getline()
+        char input[10];
+        inputFile.getline(input, 100);
+        cout << input << endl;
     }
-    
+
     //cout << "output = " << namespace_exit::x + namespace_insert::x;
     //cout << "find = " << yes.find('W') << endl;
     //string delet = yes.erase(0, 2 );
