@@ -3,7 +3,7 @@ class Search : public TableData
     public:
     void search()
     {
-        cout << "search";
+        cout << "search\n";
     }
 };
 

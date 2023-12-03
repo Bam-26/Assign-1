@@ -3,7 +3,7 @@ class Update : public TableData
     public:
     void update()
     {
-        cout << "update";
+        cout << "update\n";
     }
 };
 

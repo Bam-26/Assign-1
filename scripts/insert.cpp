@@ -3,7 +3,7 @@ class Insert : public TableData
     public:
     void insert()
     {
-        cout << "insert";
+        cout << "insert\n";
     }
 };
 

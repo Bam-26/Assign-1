@@ -10,7 +10,7 @@
 
 int main()
 {
-    //_______________________File Input_______________________
+    //_______________________________File Input_______________________________
     ifstream inFile;
     inFile.open("table1.txt");
 
@@ -24,42 +24,54 @@ int main()
         tableData.upper95[i]
     )
     {i++;}
-    //________________________________________________________
+    //________________________________________________________________________
 
+    cout << "=============================" << endl;
+    cout << "*      MPN Data Manager     *" << endl;
+    cout << "=============================" << endl;
 
-    //User Options
+    cout << "\n\nPlease pick your options : ";
+
+    //_______________________________User Input_______________________________
     int options;
-    cin >> options;
-    switch (options)
+    do
     {
-    case 1:
-        list.list();
-        break;
+        cin >> options;
+        switch (options)
+        {
+        case 1:
+            list.list();
+            break;
 
-    case 2:
-        search.search();
-        break;
+        case 2:
+            search.search();
+            break;
 
-    case 3:
-        insert.insert();
-        break;
+        case 3:
+            insert.insert();
+            break;
 
-    case 4:
-        update.update();
-        break;
+        case 4:
+            update.update();
+            break;
 
-    case 5:
-        query.query();
-        break;
+        case 5:
+            query.query();
+            break;
 
-    case 6:
-        appExit.appExit();
-        break;
+        case 6:
+            appExit.appExit();
+            break;
 
-    default:
-        cout << "error";
-        break;
+        default:
+            cin.clear();
+            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+            cout << "Input error, please enter the appropriate number.\n\n";
+            cout << "Please pick your options : ";
+            break;
         }
+    } while (options != 6);
+    //________________________________________________________________________
 }
     
 /*

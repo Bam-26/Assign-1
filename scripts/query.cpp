@@ -3,7 +3,7 @@ class Query : public TableData
     public:
     void query()
     {
-        cout << "query";
+        cout << "query\n";
     }
 };
 
