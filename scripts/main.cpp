@@ -30,7 +30,13 @@ int main()
     cout << "*      MPN Data Manager     *" << endl;
     cout << "=============================" << endl;
 
-    cout << "\n\nPlease pick your options : ";
+    //"_________________________________________________________________\n";
+    cout << "\nPlease pick your options : " << endl;
+    cout << "1) List -- Display the data on screen." << endl;
+    cout << "2) Search -- Search MPN data using combination of positive triplets." << endl;
+    cout << "3) Insert -- Insert new data entry." << endl;
+    cout << "4) Update -- Update existing data." << endl;
+    cout << "5) Query " << endl;
 
     //_______________________________User Input_______________________________
     int options;
@@ -66,8 +72,9 @@ int main()
         default:
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
-            cout << "Input error, please enter the appropriate number.\n\n";
-            cout << "Please pick your options : ";
+            cout << "\n! Input error, please enter the appropriate number !\n\n";
+            cout << "Please enter the number your options : " << endl;
+            //cout << "_________________________________________________________________\n";
             break;
         }
     } while (options != 6);

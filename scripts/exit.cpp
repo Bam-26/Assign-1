@@ -3,7 +3,9 @@ class AppExit : public TableData
 public:
     void appExit()
     {
-        cout << "exit\n";
+        cout << "==============================" << endl;
+        cout << "* Program Exited. Thank You! *" << endl;
+        cout << "==============================" << endl;
     }
 };
 
