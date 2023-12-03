@@ -1,15 +1,10 @@
-#include <string>
-#include <iostream>
+class Update : public TableData
+{
+    public:
+    void update()
+    {
+        cout << "update";
+    }
+};
 
-//______STD Components______
-using std::cin;
-using std::cout;
-using std::string;
-//__________________________
-
-namespace namespace_update
-{// ___please declare variables here___
-
-    //_________________________________
-}
-using namespace namespace_update;
+Update update;

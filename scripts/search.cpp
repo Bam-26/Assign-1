@@ -1,15 +1,10 @@
-#include <string>
-#include <iostream>
+class Search : public TableData
+{
+    public:
+    void search()
+    {
+        cout << "search";
+    }
+};
 
-//______STD Components______
-using std::cin;
-using std::cout;
-using std::string;
-//__________________________
-
-namespace namespace_search
-{// ___please declare variables here___
-    
-    //_________________________________
-}
-using namespace namespace_search;
+Search search;

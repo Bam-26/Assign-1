@@ -1,7 +1,5 @@
-#include <iostream>
-#include <fstream>
-#include <string>
-//____Linker Header____
+//____FIle Headers____
+#include "tabledata.cpp"
 #include "list.cpp"
 #include "search.cpp"
 #include "insert.cpp"
@@ -9,26 +7,10 @@
 #include "query.cpp"
 #include "exit.cpp"
 //_____________________
-using namespace std;
-
-fstream inputFile;
-
-class Main
-{
-private:
-public: 
-    string combinations[216];
-    int indexMPN[216];
-    int lower95[216];
-    int upper95[216];
-};
-
 
 int main()
 {
-
     //_______________________File Input_______________________
-    Main tableData;
     ifstream inFile;
     inFile.open("table1.txt");
 
@@ -45,15 +27,52 @@ int main()
     //________________________________________________________
 
 
-    cout << "Table Row :\n\n";
-    for (int j = 0; j < 10; j++)
+    //User Options
+    int options;
+    cin >> options;
+    switch (options)
     {
-        cout << "Row " << j + 1 << " = " << tableData.combinations[j] << ", " << tableData.indexMPN[j] << ", " << tableData.lower95[j] << ", " << tableData.upper95[j] << endl;
+    case 1:
+        list.list();
+        break;
+
+    case 2:
+        search.search();
+        break;
+
+    case 3:
+        insert.insert();
+        break;
+
+    case 4:
+        update.update();
+        break;
+
+    case 5:
+        query.query();
+        break;
+
+    case 6:
+        appExit.appExit();
+        break;
+
+    default:
+        cout << "error";
+        break;
+        }
+}
+    
+/*
+    cout << "Table Row :\n\n";
+    for (int n = 0; n < 10; n++)
+    {
+        cout << "Row " << n + 1 << " = " << tableData.combinations[n] << ", " << tableData.indexMPN[n] << ", " << tableData.lower95[n] << ", " << tableData.upper95[n] << endl;
     }
 
     cout << "\nMPN Combinations = ";
-    for (int j = 0; j < 10; j++)
+    for (int n = 0; n < 10; n++)
     {
-        cout << tableData.combinations[j] << ", ";
+        cout << tableData.combinations[n] << ", ";
     }
 }
+*/

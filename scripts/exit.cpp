@@ -1,17 +1,10 @@
-#include<string>
-#include<iostream>
+class AppExit : public TableData
+{
+public:
+    void appExit()
+    {
+        cout << "exit";
+    }
+};
 
-//______STD Components______
-using std::cin;
-using std::cout;
-using std::string;
-//__________________________
-
-namespace namespace_exit
-{// ___please declare variables here___
-    int x = 35;
-    //_________________________________
-}
-using namespace namespace_exit;
-
-
+AppExit appExit;

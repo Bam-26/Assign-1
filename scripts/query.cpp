@@ -1,15 +1,10 @@
-#include <string>
-#include <iostream>
+class Query : public TableData
+{
+    public:
+    void query()
+    {
+        cout << "query";
+    }
+};
 
-//______STD Components______
-using std::cin;
-using std::cout;
-using std::string;
-//__________________________
-
-namespace namespace_query
-{// ___please declare variables here___
-     
-    //_________________________________
-}
-using namespace namespace_query;
+Query query;
