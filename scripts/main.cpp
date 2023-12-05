@@ -14,18 +14,15 @@ int main()
     ifstream inFile;
     inFile.open("table1.txt");
 
-    int j = 0;
     int i = 0;
     while (
         inFile >>
-        tableData.combinations[i][0] >>
-        tableData.combinations[i][1] >>
-        tableData.combinations[i][2] >>
+        tableData.combinations[i] >>
         tableData.indexMPN[i] >>
         tableData.lower95[i] >>
         tableData.upper95[i])
     {
-        
+
         i++;
     }
     //________________________________________________________________________
@@ -54,7 +51,7 @@ int main()
             break;
 
         case 2:
-            search.search();
+            search.search(i);
             break;
 
         case 3:
@@ -75,7 +72,7 @@ int main()
 
         default:
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+            cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "\n! Input error, please enter the appropriate number !\n\n";
             cout << "Please enter the number your options : " << endl;
             //cout << "_________________________________________________________________\n";
@@ -84,7 +81,7 @@ int main()
     } while (options != 6);
     //________________________________________________________________________
 }
-    
+
 /*
     cout << "Table Row :\n\n";
     for (int n = 0; n < 10; n++)
