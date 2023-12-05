@@ -68,15 +68,4 @@ public:
     }
 };
 
-int insert()
-{
-        Insert myObj;
-        //create object of insert class
-        myObj.input();
-        //call input function
-        myObj.rearrange();
-        //call rearrange function
-        return 0;
-}
-
 Insert insert;
