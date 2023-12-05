@@ -22,7 +22,7 @@ class Search : public TableData
                 cout<<" 95% of samples contain between "<<tableData.lower95[n];
                 cout<<" and "<<tableData.upper95[n]<<"bacterial/ml."<<endl;
                 h=1;
-                index=i;
+                index=n;
             }
         }
         if (h==0)
