@@ -68,7 +68,7 @@ public:
     }
 };
 
-int main()
+int main_insert()
 {
         Insert myObj;
         //create object of insert class
