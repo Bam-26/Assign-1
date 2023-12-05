@@ -37,7 +37,8 @@ int main()
     cout << "2) Search -- Search MPN data using combination of positive triplets." << endl;
     cout << "3) Insert -- Insert new data entry." << endl;
     cout << "4) Update -- Update existing data." << endl;
-    cout << "5) Query " << endl;
+    cout << "5) Query --" << endl;
+    cout << "6) Exit -- Exits the program.";
 
     //_______________________________User Input_______________________________
     int options;
