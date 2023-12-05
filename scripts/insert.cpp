@@ -67,5 +67,3 @@ public:
         //print out final table after insertion
     }
 };
-
-Insert insert;
