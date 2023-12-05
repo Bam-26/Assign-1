@@ -59,7 +59,7 @@ int main()
             break;
 
         case 4:
-            update.update();
+            update.update(i);
             break;
 
         case 5:
