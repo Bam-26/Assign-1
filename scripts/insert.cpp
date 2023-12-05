@@ -67,3 +67,14 @@ public:
         //print out final table after insertion
     }
 };
+
+void insert()
+{
+    Insert myObj;
+    //create object of insert class
+    myObj.input();
+    //call input function
+    myObj.rearrange();
+    //call rearrange function
+}
+
