@@ -4,6 +4,7 @@ class Search : public TableData
     public:
         string search_combination;
         int h;
+        int index;
     void input_search()
     {
         cout<<"Input combination of positives: ";
@@ -21,12 +22,12 @@ class Search : public TableData
                 cout<<" 95% of samples contain between "<<tableData.lower95[n];
                 cout<<" and "<<tableData.upper95[n]<<"bacterial/ml."<<endl;
                 h=1;
+                index=i;
             }
-
         }
-        if (h==0
+        if (h==0)
         {
-            cout<<"There is no data in the list"<<endl;
+            cout<<"There is no data combination in the list"<<endl;
         }
     }
 };
