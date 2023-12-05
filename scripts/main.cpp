@@ -56,12 +56,7 @@ int main()
             break;
 
         case 3:
-            Insert myObj;
-            //create object of insert class
-            myObj.input();
-            //call input function
-            myObj.rearrange();
-            //call rearrange function
+            insert.insert(i);
             break;
 
         case 4:
