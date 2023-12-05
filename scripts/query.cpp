@@ -1,3 +1,4 @@
+#include "tabledata.cpp"
 class Query : public TableData
 {
     public:

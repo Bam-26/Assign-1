@@ -1,3 +1,4 @@
+#include "tabledata.cpp"
 class Search : public TableData
 {
     public:

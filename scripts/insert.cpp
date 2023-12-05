@@ -1,3 +1,4 @@
+#include "tabledata.cpp"
 class Insert : public TableData
 {
     public:

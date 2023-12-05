@@ -1,5 +1,5 @@
 //____FIle Headers____
-#include "tabledata.cpp"
+//#include "tabledata.cpp"
 #include "list.cpp"
 #include "search.cpp"
 #include "insert.cpp"
@@ -14,16 +14,24 @@ int main()
     ifstream inFile;
     inFile.open("table1.txt");
 
+    int j = 0;
     int i = 0;
     while 
     (
         inFile >> 
-        tableData.combinations[i] >> 
+        tableData.combinations[j][i] >> 
         tableData.indexMPN[i] >>
         tableData.lower95[i] >>
         tableData.upper95[i]
     )
-    {i++;}
+    {
+        j++;
+        i++;
+        if(j >= 2)
+        {
+            j = 0;
+        }
+    }
     //________________________________________________________________________
 
     cout << "=============================" << endl;
