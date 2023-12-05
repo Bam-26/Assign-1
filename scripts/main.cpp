@@ -16,21 +16,17 @@ int main()
 
     int j = 0;
     int i = 0;
-    while 
-    (
-        inFile >> 
-        tableData.combinations[j][i] >> 
+    while (
+        inFile >>
+        tableData.combinations[i][0] >>
+        tableData.combinations[i][1] >>
+        tableData.combinations[i][2] >>
         tableData.indexMPN[i] >>
         tableData.lower95[i] >>
-        tableData.upper95[i]
-    )
+        tableData.upper95[i])
     {
-        j++;
+        
         i++;
-        if(j >= 2)
-        {
-            j = 0;
-        }
     }
     //________________________________________________________________________
 

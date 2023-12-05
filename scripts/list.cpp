@@ -8,11 +8,8 @@ public:
         for (int n = 0; n < 10; n++)
         {
             cout << "Row " << n + 1 << " = ";
-            for (int o = 0; o < 3; o++)
-            {
-                cout << tableData.combinations[n][o] << "-";
-            }
-                cout << ", " << tableData.indexMPN[n] << ", " << tableData.lower95[n] << ", " << tableData.upper95[n] << endl;
+            cout << tableData.combinations[n][0] << "-" << tableData.combinations[n][1] << "-" << combinations[n][2];
+            cout << ", " << tableData.indexMPN[n] << ", " << tableData.lower95[n] << ", " << tableData.upper95[n] << endl;
         }
     };
 };
