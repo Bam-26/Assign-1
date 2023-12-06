@@ -73,7 +73,7 @@ public:
     }
 };
 
-void insert()
+void insertNew()
 {
     Insert myObj;
     //create object of insert class

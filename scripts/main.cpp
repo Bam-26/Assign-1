@@ -2,7 +2,7 @@
 //#include "tabledata.cpp"
 //#include "list.cpp"
 #include "search.cpp"
-#include "insert.cpp"
+#include "inserting.cpp"
 #include "update.cpp"
 #include "query.cpp"
 #include "exit.cpp"
@@ -63,7 +63,7 @@ int main()
             break;
 
         case 3:
-            //insert.insert();
+            inserting.insertNew();
             break;
 
         case 4:
