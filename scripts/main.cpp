@@ -62,7 +62,7 @@ int main()
             break;
 
         case 3:
-            obj.insertNew();
+            obj.insertNew(i);
             break;
 
         case 4:
