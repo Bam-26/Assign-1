@@ -14,8 +14,11 @@ public:
         {
             k++;
         }
-        if(tableData.combinations[i]==tableData.combinations[k])
+        while(k<i)
+        {
+            if(tableData.combinations[i]==tableData.combinations[k])
             cout << "This combination is in the list." << endl;
+        }
         cout << "Enter the MPN-index data: ";
         cin >> tableData.indexMPN[i];
         //Inputing new MPN-index data
