@@ -32,25 +32,25 @@ int main()
         i++;
     }
     //________________________________________________________________________
-
+     int options;
+do
+    {
     cout << "=============================" << endl;
     cout << "*      MPN Data Manager     *" << endl;
     cout << "=============================" << endl;
 
     //"_________________________________________________________________\n";
     cout << "\nPlease pick your options : " << endl;
-    cout << "1) List --------------------- Display the data on screen." << endl;
-    cout << "2) Search ------------- Search with triplet combinations." << endl;
-    cout << "3) Insert ------------------------ Insert new data entry." << endl;
-    cout << "4) Update ------------------------- Update existing data." << endl;
-    cout << "5) Query ---- Search with triplet combination attributes." << endl;
-    cout << "6) Exit ------------------------------ Exits the program." << endl;
-    cout << "\n Option : ";
+    cout << "1) List -- Display the data on screen." << endl;
+    cout << "2) Search -- Search MPN data using combination of positive triplets." << endl;
+    cout << "3) Insert -- Insert new data entry." << endl;
+    cout << "4) Update -- Update existing data." << endl;
+    cout << "5) Query --" << endl;
+    cout << "6) Exit -- Exits the program.";
 
     //_______________________________User Input_______________________________
-    int options;
-    do
-    {
+
+
         cin >> options;
         switch (options)
         {
@@ -63,7 +63,7 @@ int main()
             break;
 
         case 3:
-            inserting.insertNew();
+            obj.insertNew(i);
             break;
 
         case 4:
@@ -81,18 +81,13 @@ int main()
         default:
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout << "\n! Input error, please enter the appropriate number!\n";
-            cout << "\nPlease pick your options : " << endl;
-            cout << "1) List --------------------- Display the data on screen." << endl;
-            cout << "2) Search ------------- Search with triplet combinations." << endl;
-            cout << "3) Insert ------------------------ Insert new data entry." << endl;
-            cout << "4) Update ------------------------- Update existing data." << endl;
-            cout << "5) Query ---- Search with triplet combination attributes." << endl;
-            cout << "6) Exit ------------------------------ Exits the program." << endl;
-            cout << "\n Option : ";
-            //"_________________________________________________________________\n";
+            cout << "\n! Input error, please enter the appropriate number !\n\n";
+            cout << "Please enter the number your options : " << endl;
+            //cout << "_________________________________________________________________\n";
             break;
         }
+
+        cout << endl << endl;
     } while (options != 6);
     //________________________________________________________________________
 }
