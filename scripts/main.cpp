@@ -13,11 +13,13 @@ int main()
     //_______________________________File Input_______________________________
     ifstream inFile;
     inFile.open("table1.txt");
+    /*
     if(!infile)
     {
         cout << "File cannot be opened!" << endl;
         exit(1);
     }
+    */
     int i = 0;
     while (
         inFile >>
@@ -56,11 +58,11 @@ int main()
             break;
 
         case 2:
-            search.search(i);
+            //search.search(i);
             break;
 
         case 3:
-            insert.insert(i);
+            //insert.insert();
             break;
 
         case 4:
