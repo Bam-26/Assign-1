@@ -10,7 +10,7 @@ class Search : public TableData
         cout<<"Input combination of positives: ";
         cin>>search_combination;
     }
-    void search(int i)
+    int appSearch(int i)
     {
         input_search();
         for (int n=0; n<i; n++)
@@ -32,4 +32,4 @@ class Search : public TableData
     }
 };
 
-Search search;
+Search appSearch;

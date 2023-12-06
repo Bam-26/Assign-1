@@ -1,6 +1,6 @@
 //____File Headers____
 //#include "tabledata.cpp"
-#include "list.cpp"
+//#include "list.cpp"
 #include "search.cpp"
 #include "insert.cpp"
 #include "update.cpp"
@@ -54,11 +54,11 @@ int main()
         switch (options)
         {
         case 1:
-            list.list();
+            //list.list();
             break;
 
         case 2:
-            //search.search(i);
+            appSearch.appSearch(i);
             break;
 
         case 3:
