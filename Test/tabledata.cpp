@@ -5,6 +5,7 @@
 #include <fstream>
 #include <string>
 #include <limits>
+#include <algorithm>
 
 using namespace std;
 class TableData

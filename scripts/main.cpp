@@ -41,13 +41,13 @@ do
 
     //"_________________________________________________________________\n";
     cout << "\nPlease pick your options : " << endl;
-    cout << "1) List -- Display the data on screen." << endl;
-    cout << "2) Search -- Search MPN data using combination of positive triplets." << endl;
-    cout << "3) Insert -- Insert new data entry." << endl;
-    cout << "4) Update -- Update existing data." << endl;
-    cout << "5) Query --" << endl;
-    cout << "6) Exit -- Exits the program.";
-
+    cout << "1) List --------------------- Display the data on screen." << endl;
+    cout << "2) Search ------------ Search using triplet combinations." << endl;
+    cout << "3) Insert ------------------------ Insert new data entry." << endl;
+    cout << "4) Update ------------------------- Update existing data." << endl;
+    cout << "5) Query --- Search using triplet combination attributes. " << endl;
+    cout << "6) Exit ------------------------------ Exits the program." << endl;
+    cout << "\nOption : ";
     //_______________________________User Input_______________________________
 
 
