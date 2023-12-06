@@ -3,33 +3,7 @@
 class Insert : public TableData
 {
 public:
-    void input(int &i)
-    {
-        cout << "No of combinations: " << i << endl;
-        cout << "Enter the combination-of-positives triplet data: ";
-        cin >> tableData.combinations[i];
-        int k=0;
-        //Inputing new combination-of-positive-triplet-data
-        while(tableData.combinations[i]!=tableData.combinations[k] && k<i)
-        {
-            k++;
-        }
-        while(k<i)
-        {
-            if(tableData.combinations[i]==tableData.combinations[k])
-            cout << "This combination is in the list." << endl;
-        }
-        cout << "Enter the MPN-index data: ";
-        cin >> tableData.indexMPN[i];
-        //Inputing new MPN-index data
-        cout << "Enter the 95-percent-confidence-limit-lower data: ";
-        cin >> tableData.lower95[i];
-        //Inputing new 95-percent-confidence-limit-lower data
-        cout << "Enter the 95-percent-confidence-limit-upper data: ";
-        cin >> tableData.upper95[i];
-        //Inputing new 95-percent-confidence-limit-upper data
-    }
-    void rearrange(int &i)
+     void rearrange(int &i)
     {
         string w = tableData.combinations[i];
         int x = tableData.indexMPN[i];
@@ -63,13 +37,46 @@ public:
         //print out final table after insertion
 
     }
+    void input(int &i)
+    {
+        string combi;
+        cout << "No of combinations: " << i << endl;
+        cout << "Enter the combination-of-positives triplet data: ";
+        cin >> combi;
+        int k=0;
+        //Inputing new combination-of-positive-triplet-data
+        while(combi!=tableData.combinations[k] && k<i)
+        {
+            k++;
+        }
+        if(combi==tableData.combinations[k])
+        {
+            cout << "This combination is in the list." << endl;
+        }
+        if(combi!=tableData.combinations[k])
+        {
+            cout << "Enter the MPN-index data: ";
+            cin >> tableData.indexMPN[i];
+            //Inputing new MPN-index data
+            cout << "Enter the 95-percent-confidence-limit-lower data: ";
+            cin >> tableData.lower95[i];
+            //Inputing new 95-percent-confidence-limit-lower data
+            cout << "Enter the 95-percent-confidence-limit-upper data: ";
+            cin >> tableData.upper95[i];
+            //Inputing new 95-percent-confidence-limit-upper data
+
+            tableData.combinations[i] = combi;
+            rearrange(i);
+        }
+    }
+
     void insertNew(int i)
     {
 
-    //create object of insert class
-            input(i);
-            //call input function
-            rearrange(i);
+        input(i);
+        //call input function
+       // if(tableData.combinations[i]!=tableData.combinations[k])
+         //   rearrange(i);
             //call rearrange function
     }
 };
