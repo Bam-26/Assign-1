@@ -63,6 +63,7 @@ int main()
 
         case 3:
             obj.insertNew();
+            inserting.insertNew();
             break;
 
         case 4:
