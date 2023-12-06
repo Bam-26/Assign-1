@@ -44,26 +44,18 @@ public:
             q++;
         }
         //Find position of inserted data in supposed order
-        for(int l=size;l>q;--l)
-            tableData.combinations[l] = tableData.combinations[l - 1];
-        //alternative code: sort(tableData.combinations, tableData.combinations + size);
-        //rearrange combinations in ascending order
-        int r=0;
-        while(tableData.combinations[r]!=w && r<size)
+        for(int j=size;j>q;--j)
         {
-            r++;
-        }
-        //find location of index of inserted combination
-        for(int j=size;j>r;--j)
-        {
+            tableData.combinations[j] = tableData.combinations[j - 1];
             tableData.indexMPN[j] = tableData.indexMPN[j - 1];
             tableData.lower95[j] = tableData.lower95[j - 1];
             tableData.upper95[j] = tableData.upper95[j - 1];
         }
-        //rearrange elements
-        tableData.indexMPN[r] = x;
-        tableData.lower95[r] = y;
-        tableData.upper95[r] = z;
+        //alternative code: sort(tableData.combinations, tableData.combinations + size);
+        //rearrange elements in ascending order
+        tableData.indexMPN[q] = x;
+        tableData.lower95[q] = y;
+        tableData.upper95[q] = z;
         //set value of inserted combination
         for(int n=0;n<10;n++)
             {
