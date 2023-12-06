@@ -37,10 +37,19 @@ public:
         int x = tableData.indexMPN[size];
         int y = tableData.lower95[size];
         int z = tableData.upper95[size];
-        sort(tableData.combinations, tableData.combinations + size);
-        //Sort combinations in ascending order
+        //set fixed variables for the inserted datas
+        int q=0;
+        while(q<size && tableData.combinations[size]>tableData.combinations[q])
+        {
+            q++;
+        }
+        //Find position of inserted data in supposed order
+        for(int l=size;l>q;--l)
+            tableData.combinations[l] = tableData.combinations[l - 1];
+        //alternative code: sort(tableData.combinations, tableData.combinations + size);
+        //rearrange combinations in ascending order
         int r=0;
-        while(tableData.combinations[r]!="w" && r<size)
+        while(tableData.combinations[r]!=w && r<size)
         {
             r++;
         }
