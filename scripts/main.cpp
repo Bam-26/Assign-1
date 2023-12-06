@@ -62,7 +62,7 @@ int main()
             break;
 
         case 3:
-            //insert.insert();
+            insert.insert();
             break;
 
         case 4:
