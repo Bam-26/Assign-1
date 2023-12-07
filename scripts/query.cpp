@@ -6,9 +6,17 @@ private:
     string stack2[216];
     string stack3[216];
 
+    string stringTemp1;
+    string stringTemp2;
+    string stringTemp3;
+
     string combination1;
     string combination2;
     string combination3;
+
+    int dashIndex1;
+    int dashIndex2;
+    int dashIndex3;
     //string fullCombination;
 
 public:
@@ -28,25 +36,32 @@ public:
         /*
         tableData.combinations[0].erase(remove(tableData.combinations[0].begin(), tableData.combinations[0].end(), '-'), tableData.combinations[0].end());
         */
+        
 
-        cout << tableData.combinations[0] << endl;
-        cout << combination1 << endl;
+        cout << tableData.combinations[0].find('-') << endl;
+        dashIndex1 = tableData.combinations[0].find('-');
+        stringTemp1 = tableData.combinations[0].substr(0, dashIndex1);
+        if(stringTemp1 == combination1)
+        {
+            cout << "AAAAAAAAAAAAAAAAA";
+        }
+        //cout << combination1 << endl;
 
-/*
-         if (tableData.combinations[0][0] == combination1)
-         {
-             cout << "yassssssssss";
-             // cout << tableData.combinations[n][0] << endl;
-         }
+        /*
+                 if (tableData.combinations[0][0] == combination1)
+                 {
+                     cout << "yassssssssss";
+                     // cout << tableData.combinations[n][0] << endl;
+                 }
 
-         for (int n = 0; n < 10; n++)
-         {
-             if ((int)tableData.combinations[n][0] == combination1)
-             {
-                 cout << "Index " << n << " in.\n";
-                 //cout << tableData.combinations[n][0] << endl;
-             }
-         }*/
+                 for (int n = 0; n < 10; n++)
+                 {
+                     if ((int)tableData.combinations[n][0] == combination1)
+                     {
+                         cout << "Index " << n << " in.\n";
+                         //cout << tableData.combinations[n][0] << endl;
+                     }
+                 }*/
     }
 };
 
