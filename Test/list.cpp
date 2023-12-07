@@ -41,5 +41,8 @@ int main()
         i++;
     }
 
+    string yes = "222";
+    cout << stoi(yes);
+
     list.list();
 }
