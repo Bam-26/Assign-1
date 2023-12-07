@@ -68,7 +68,6 @@ do
 
         case 4:
             update.update(i);
-            break;
 
         case 5:
             query.query();
