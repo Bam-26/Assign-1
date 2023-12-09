@@ -20,7 +20,7 @@ class Search : public TableData
                 cout<<"For "<<tableData.combinations[n];
                 cout<<", MPN = "<<tableData.indexMPN[n]<<";";
                 cout<<" 95% of samples contain between "<<tableData.lower95[n];
-                cout<<" and "<<tableData.upper95[n]<<"bacterial/ml."<<endl;
+                cout<<" and "<<tableData.upper95[n]<<" bacterial/ml."<<endl;
                 h=1;
                 index=n;
             }
