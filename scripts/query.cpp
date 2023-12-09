@@ -74,8 +74,11 @@ public:
                 stringTemp2[t].erase(0, dashIndex + 1);
             }
             stringTemp2[t] = stringTemp2[t].substr(0, dashIndex);
-            if()
-            cout << stringTemp2[t] << endl;
+            if(stringTemp2[t] == combination2 || combination2 == "no")
+            {
+                cout << tableIndex << endl;
+            }
+            //cout << stringTemp2[t] << endl;
             t++;  
         }
 /*
