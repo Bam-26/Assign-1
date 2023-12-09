@@ -5,10 +5,10 @@ class Insert : public TableData
 public:
      void rearrange(int &i)
     {
-        string w = tableData.combinations[i];
-        int x = tableData.indexMPN[i];
-        int y = tableData.lower95[i];
-        int z = tableData.upper95[i];
+        string com = tableData.combinations[i];
+        int in = tableData.indexMPN[i];
+        int low = tableData.lower95[i];
+        int up = tableData.upper95[i];
         //set fixed variables for the inserted data
 
 
@@ -31,10 +31,10 @@ public:
         //rearrange elements in ascending order
 
 
-        tableData.combinations[q] = w;
-        tableData.indexMPN[q] = x;
-        tableData.lower95[q] = y;
-        tableData.upper95[q] = z;
+        tableData.combinations[q] = com;
+        tableData.indexMPN[q] = in;
+        tableData.lower95[q] = low;
+        tableData.upper95[q] = up;
         //set value of inserted combination
 
 
