@@ -20,7 +20,6 @@ int main()
         exit(1);
     }
     */
-    int i = 0;
     while (
         inFile >>
         tableData.combinations[i] >>
