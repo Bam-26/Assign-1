@@ -11,7 +11,6 @@ public:
         int up = tableData.upper95[i];
         //set fixed variables for the inserted data
 
-
         int q=0;
         while(q<i && tableData.combinations[i]>tableData.combinations[q])
         {
@@ -37,8 +36,8 @@ public:
         tableData.upper95[q] = up;
         //set value of inserted combination
 
-
-        for(int n=0;n<10;n++)
+        cout << "\t*NEW LIST*" << endl;
+        for(int n=0;n<i+1;n++)
             {
                 cout << tableData.combinations[n] << "\t" << tableData.indexMPN[n] << "\t" << tableData.lower95[n] << "\t" << tableData.upper95[n] << endl;
             }
@@ -82,6 +81,8 @@ public:
             cin >> tableData.upper95[i];
             //Inputing new 95-percent-confidence-limit-upper data
             tableData.combinations[i] = combi;
+
+
             rearrange(i);
             //Call rearrange function
         }
@@ -92,6 +93,7 @@ public:
 
         input(i);
         //call input function
+
     }
 };
 
