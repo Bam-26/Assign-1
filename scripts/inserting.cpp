@@ -36,7 +36,9 @@ public:
         tableData.upper95[q] = up;
         //set value of inserted combination
 
+        cout << endl;
         cout << "\t*NEW LIST*" << endl;
+        cout << endl;
         for(int n=0;n<i+1;n++)
             {
                 cout << tableData.combinations[n] << "\t" << tableData.indexMPN[n] << "\t" << tableData.lower95[n] << "\t" << tableData.upper95[n] << endl;
