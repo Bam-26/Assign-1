@@ -64,6 +64,7 @@ do
 
         case 3:
             obj.insertNew(i);
+            i++;
             break;
 
         case 4:
