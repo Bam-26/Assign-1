@@ -1,6 +1,6 @@
 #include "tabledata.cpp"
 #include "search.h"
-class Update : public TableData, public Search // connect to the search class to be able to use the search function
+class AppUpdate : public TableData, public Search // connect to the search class to be able to use the search function
 {
     public:
     void update(int i)
@@ -18,4 +18,4 @@ class Update : public TableData, public Search // connect to the search class to
     }
 };
 
-Update update;
+AppUpdate update;

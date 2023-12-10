@@ -79,6 +79,7 @@ do
 
         case 6:
             appExit.appExit();
+            inFile.close();
             //call exit function
             break;
 
