@@ -12,13 +12,13 @@ int main()
     //_______________________________File Input_______________________________
     ifstream inFile;
     inFile.open("table1.txt");
-    /*
-    if(!infile)
+    
+    if(!inFile)
     {
         cout << "File cannot be opened!" << endl;
         exit(1);
     }
-    */
+    
     while (
         inFile >>
         tableData.combinations[i] >>
