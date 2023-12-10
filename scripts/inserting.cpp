@@ -36,13 +36,20 @@ public:
         tableData.upper95[q] = up;
         //set value of inserted combination
 
-        cout << endl;
-        cout << "\t*NEW LIST*" << endl;
-        cout << endl;
-        for(int n=0;n<i+1;n++)
-            {
-                cout << tableData.combinations[n] << "\t" << tableData.indexMPN[n] << "\t" << tableData.lower95[n] << "\t" << tableData.upper95[n] << endl;
-            }
+        cout << endl << endl;
+        cout << "                     >>>>> New Table Row <<<<<\n";
+
+        cout << "       Combination of  MPN Index/100ml  95 percent Confidence Limit  \n";
+        cout << "  No   Positives (MPN)                      Lower         Upper    \n";
+
+        for (int n=0;n<i+1;n++)
+        {
+            cout << setw(4) << n + 1;
+            cout << setw(13) << tableData.combinations[n];
+            cout << setw(16) << tableData.indexMPN[n];
+            cout << setw(15) << tableData.lower95[n];
+            cout << setw(14) << tableData.upper95[n] << endl;
+        }
         //print out final table after insertion
     }
 
