@@ -1,6 +1,5 @@
 //____File Headers____
-//#include "tabledata.cpp"
-//#include "list.cpp"
+#include "list.cpp"
 #include "search.cpp"
 #include "inserting.cpp"
 #include "update.cpp"
@@ -31,14 +30,13 @@ int main()
         i++;
     }
     //________________________________________________________________________
+     
      int options;
 do
     {
     cout << "=============================" << endl;
     cout << "*      MPN Data Manager     *" << endl;
     cout << "=============================" << endl;
-
-    //"_________________________________________________________________\n";
     cout << "\nPlease pick your options : " << endl;
     cout << "1) List --------------------- Display the data on screen." << endl;
     cout << "2) Search ------------ Search using triplet combinations." << endl;
@@ -54,7 +52,7 @@ do
         switch (options)
         {
         case 1:
-            //list.list();
+            list.list();
             break;
 
         case 2:
@@ -82,26 +80,9 @@ do
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
             cout << "\n! Input error, please enter the appropriate number !\n\n";
             cout << "Please enter the number your options : " << endl;
-            //cout << "_________________________________________________________________\n";
             break;
         }
 
         cout << endl << endl;
     } while (options != 6);
-    //________________________________________________________________________
 }
-
-/*
-    cout << "Table Row :\n\n";
-    for (int n = 0; n < 10; n++)
-    {
-        cout << "Row " << n + 1 << " = " << tableData.combinations[n] << ", " << tableData.indexMPN[n] << ", " << tableData.lower95[n] << ", " << tableData.upper95[n] << endl;
-    }
-
-    cout << "\nMPN Combinations = ";
-    for (int n = 0; n < 10; n++)
-    {
-        cout << tableData.combinations[n] << ", ";
-    }
-}
-*/

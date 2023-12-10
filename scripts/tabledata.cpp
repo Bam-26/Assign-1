@@ -2,8 +2,10 @@
 #define TABLEDATA_H
 
 #include <iostream>
+#include <iomanip>
 #include <fstream>
 #include <string>
+#include <cstring>
 #include <limits>
 #include <algorithm>
 

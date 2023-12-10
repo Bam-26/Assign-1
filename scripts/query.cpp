@@ -36,10 +36,10 @@ public:
         cout << "Please enter 0.1 ml group you want to search or enter \"no\" to leave it blank : ";
         cin >> combination3;
        
-
-        cout << "Stack 1 :\n";
+        
         for (int n = 0; n < i; n++)
         {
+            //Stack 1
             dashIndex = tableData.combinations[n].find('-');
             stringTemp1 = tableData.combinations[n].substr(0, dashIndex);
             if (stringTemp1 == combination1 || combination1 == "no")
@@ -50,17 +50,17 @@ public:
             }
         }
 
-        
+        /*___________Debugger___________
         for (int n = 0; n < t; n++)
         {
             cout << stack1[n]+1 << endl;
         }
+        _______________________________*/
 
+
+        //Stack 2
         stackIteration++;
         t = 0;
-
-
-        cout << endl << "stack2 :\n";
         for (int n = 0; n < stackSize1; n++)
         {
             tableIndex = stack1[n];
@@ -80,17 +80,17 @@ public:
             }
         }
 
-        
+        /*______________Debugger______________
         for (int n = 0; n < stackSize2; n++)
         {
             cout << stack2[n]+1 << endl;
         }
-        
+        ______________________________________*/
 
+
+        //Stack3
         stackIteration++;
         t = 0;
-
-        cout << endl << "stack3 :\n";
         for (int n = 0; n < stackSize2; n++)
         {
             tableIndex = stack2[n];
@@ -110,10 +110,21 @@ public:
             }
         }
 
+        //______________________Printer______________________
+        cout << "\n\n                     >>>>> Query Row <<<<<\n";
+
+        cout << "       Combination of  MPN Index/100ml  95 percent Confidence Limit  \n";
+        cout << "  No   Positives (MPN)                      Lower         Upper    \n";
+
         for (int n = 0; n < stackSize3; n++)
         {
-            cout << tableData.combinations[stack3[n]] << endl;
+            cout << setw(4) << n + 1;
+            cout << setw(13) << tableData.combinations[stack3[n]];
+            cout << setw(16) << tableData.indexMPN[stack3[n]];
+            cout << setw(15) << tableData.lower95[stack3[n]];
+            cout << setw(14) << tableData.upper95[stack3[n]] << endl;
         }
+        //_____________________________________________________
     }
 };
 
