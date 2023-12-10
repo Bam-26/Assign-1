@@ -1,18 +1,18 @@
 #include "tabledata.cpp"
 #include "search.h"
-class Update : public TableData, public Search
+class Update : public TableData, public Search // connect to the search class to be able to use the search function
 {
     public:
     void update(int i)
     {
-        appSearch(i);
-        if (h==1)
+        appSearch(i); // reuse the search function to determine whether there is a combination in the list or not.
+        if (h==1) // If there is a combination in the list, the user can update the data (MPN index, the lower and upper bounds of the 95 percent confidence range)
         {
-            cout<<"Input the new number for MPN : ";            
-            cin>>tableData.indexMPN[index];
-            cout << "Input the new number for lower bounds:";
+            cout << "Update MPN number: ";
+            cin >> tableData.indexMPN[index];
+            cout << "Update lower bounds number: ";
             cin >> tableData.lower95[index];
-            cout << "Input the new number for upper bounds:";
+            cout << "Update upper bounds number: ";
             cin >> tableData.upper95[index];
         }
     }
