@@ -3,7 +3,7 @@ class Search : public TableData
 {
     public:
         string search_combination;
-        int h;
+        int h=0;
         int index;
     void input_search() // to input the combination-of-positive-triplet-data
     {
@@ -21,14 +21,12 @@ class Search : public TableData
                 cout<<", MPN = "<<tableData.indexMPN[n]<<";";
                 cout<<" 95% of samples contain between "<<tableData.lower95[n];
                 cout<<" and "<<tableData.upper95[n]<<" bacterial/ml."<<endl;
-                h=1; // as an index if the combination sought is in the list
+                h+=1; // as an index if the combination sought is in the list
                 index=n; // for the update menu where the data in this combination will be updated
             }
         }
-        if (h==0)
-        {
+        if(h==0)
             cout<<"There is no data combination in the list"<<endl;
-        }
     }
 };
 
