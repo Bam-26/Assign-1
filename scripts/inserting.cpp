@@ -1,5 +1,4 @@
 #include "tabledata.cpp"
-#include <algorithm>
 class Insert : public TableData
 {
 public:
@@ -107,5 +106,5 @@ public:
 };
 
 Insert obj;
-
+//class object
 
