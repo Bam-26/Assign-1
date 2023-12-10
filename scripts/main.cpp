@@ -70,6 +70,7 @@ do
         case 4:
             update.update(i);
             //call update function
+            break;
 
         case 5:
             query.query();
