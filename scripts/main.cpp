@@ -30,7 +30,7 @@ int main()
         i++;
     }
     //________________________________________________________________________
-     
+
      int options;
 do
     {
@@ -53,26 +53,32 @@ do
         {
         case 1:
             list.list();
+            //call list function
             break;
 
         case 2:
             appSearch.appSearch(i);
+            //call search function
             break;
 
         case 3:
             obj.insertNew(i);
+            //call insert function
             i++;
             break;
 
         case 4:
             update.update(i);
+            //call update function
 
         case 5:
             query.query();
+            //call query function
             break;
 
         case 6:
             appExit.appExit();
+            //call exit function
             break;
 
         default:
